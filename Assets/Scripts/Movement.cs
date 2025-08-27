@@ -29,6 +29,7 @@ public class Movement : MonoBehaviour
 				targetPos = hit.point;
 
 				nav.destination = targetPos;
+				//TODO: move towards interactables origin???
 
 				if (!hit.transform.gameObject.TryGetComponent<Interactable>(out _))
 					Interactable.interactionCall.Invoke(null);
