@@ -8,10 +8,15 @@ public class Movement : MonoBehaviour
 {
     NavMeshAgent nav = null;
     Vector3 targetPos = Vector3.zero;
+	public static Movement single;
 
     void Start()
-    {
-        nav = GetComponent<NavMeshAgent>();
+	{
+		if (single == null)
+			single = this;
+		else Destroy(this);
+
+		nav = GetComponent<NavMeshAgent>();
     }
 
 	private void Update()
@@ -24,6 +29,9 @@ public class Movement : MonoBehaviour
 				targetPos = hit.point;
 
 				nav.destination = targetPos;
+
+				if (!hit.transform.gameObject.TryGetComponent<Interactable>(out _))
+					Interactable.interactionCall.Invoke(null);
 			}
 
 		}
