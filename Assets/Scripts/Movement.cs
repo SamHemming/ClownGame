@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
 	{
 		if (single == null)
 			single = this;
-		else Destroy(this);
+		else Destroy(this.gameObject);
 
 		nav = GetComponent<NavMeshAgent>();
     }

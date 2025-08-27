@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable_Collectable : MonoBehaviour
+[System.Serializable]
+public struct Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public string name;
+	public string description;
+	public Sprite sprite;
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public class Interactable_Collectable : Interactable
+{
+	public Item item;
+
+	protected override void Interact()
+	{
+		Debug.Log($"Bug????");
+		Inventory.single.Add(item);
+		Destroy(this.gameObject);
+	}
 }
