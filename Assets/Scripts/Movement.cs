@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     NavMeshAgent nav = null;
     Vector3 targetPos = Vector3.zero;
 	public static Movement single;
+	public bool canMove = true;
 
     void Start()
 	{
@@ -21,7 +22,7 @@ public class Movement : MonoBehaviour
 
 	private void Update()
 	{
-		if(Input.GetMouseButtonDown(0))
+		if(canMove && Input.GetMouseButtonDown(0))
 		{
 
 			if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, Mathf.Infinity))
