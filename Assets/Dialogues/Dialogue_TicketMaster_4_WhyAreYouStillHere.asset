@@ -9,17 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  speakerPrefab: {fileID: 919132149155446097, guid: ee96b3528bbbe7b46863761c86bb67a6, type: 3}
-  speakerName: Spoon
+  m_Script: {fileID: 11500000, guid: afee2d1f15ec8fe4980ef3d0ea80e9cf, type: 3}
+  m_Name: Dialogue_TicketMaster_4_WhyAreYouStillHere
+  m_EditorClassIdentifier: 
+  speakerPrefab: {fileID: 919132149155446097, guid: 25296a152ec6785498f2ca663b7626e2, type: 3}
+  speakerName: Ticketmaster
   sentences:
-  - text: hap pap paaa
+  - text: Enjoy the show!
     options: 0
     option1: 
     option2: 
-  - text: pa pa paa?
-    options: 1
-    option1: Paa!
-    option2: happaa

@@ -26,7 +26,8 @@ public abstract class Interactable : MonoBehaviour, IPointerClickHandler
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
-		//Debug.Log($"I Got Clicked!!");
+		if(!Movement.single.canMove) return;
+
 		isActive = true;
 		interactionCall?.Invoke(this);
 		return;
@@ -48,9 +49,8 @@ public abstract class Interactable : MonoBehaviour, IPointerClickHandler
 
 	private void ResetActive(Interactable interactable)
 	{
-		if(isActive)
-			if(interactable != this)
-				isActive = false;
+		if(isActive && interactable != this)
+			isActive = false;
 	}
 
 	protected abstract void Interact();

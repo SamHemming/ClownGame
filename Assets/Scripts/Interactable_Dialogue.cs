@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -14,14 +15,6 @@ public struct Sentence
 	public bool options;
 	public string option1;
 	public string option2;
-}
-
-[CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue", order = 1)]
-public class Dialogue : ScriptableObject
-{
-	public GameObject speakerPrefab;
-	public string speakerName;
-	public List<Sentence> sentences;
 }
 
 public class Interactable_Dialogue : Interactable
@@ -46,6 +39,11 @@ public class Interactable_Dialogue : Interactable
 	private GameObject speakerPortrait;
 	private bool clicked = false;
 
+	public UnityEvent onDialogueEnd;
+
+	private bool hasProgress = false;
+	private DialogueProgress progress;
+
 	private void Start()
 	{
 		button1Text = button1obj.GetComponentInChildren<TMP_Text>();
@@ -60,11 +58,16 @@ public class Interactable_Dialogue : Interactable
 		textTitle = titleObj.GetComponent<TMP_Text>();
 
 		dialogueUI.SetActive(false);
+
+		hasProgress = TryGetComponent<DialogueProgress>(out progress);
 	}
 
 	protected override void Interact()
 	{
-		//pause game???
+		if (hasProgress)
+		{
+			progress.CheckProgress();
+		}
 
 		Movement.single.canMove = false;
 
@@ -89,6 +92,8 @@ public class Interactable_Dialogue : Interactable
 		dialogueUI.SetActive(false);
 
 		Movement.single.canMove = true;
+
+		onDialogueEnd?.Invoke();
 	}
 
 	public IEnumerator WaitForInput(Sentence sentence)
@@ -119,6 +124,8 @@ public class Interactable_Dialogue : Interactable
 			{
 				yield return null;
 			}
+
+			yield return new WaitForEndOfFrame();
 		}
 	}
 }

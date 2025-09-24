@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public struct Item
@@ -14,10 +15,13 @@ public class Interactable_Collectable : Interactable
 {
 	public Item item;
 
+	public UnityEvent onCollect;
+
 	protected override void Interact()
 	{
-		Debug.Log($"Bug????");
+		//Debug.Log($"Bug????");
 		Inventory.single.Add(item);
+		onCollect?.Invoke();
 		Destroy(this.gameObject);
 	}
 }
