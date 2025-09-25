@@ -1100,10 +1100,6 @@ PrefabInstance:
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 867636532}
-    - target: {fileID: 7269560902071122171, guid: f160c2b1dc4b4a1419707e628b4bf361, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -1550514412580984892, guid: 4bb245bd29453984eb764498367e3636, type: 3}
     - target: {fileID: 9015069697548862556, guid: f160c2b1dc4b4a1419707e628b4bf361, type: 3}
       propertyPath: m_Name
       value: Player2
