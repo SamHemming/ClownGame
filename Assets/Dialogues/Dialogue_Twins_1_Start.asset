@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afee2d1f15ec8fe4980ef3d0ea80e9cf, type: 3}
+  m_Name: Dialogue_Twins_1_Start
+  m_EditorClassIdentifier: 
+  speakerPrefab: {fileID: 919132149155446097, guid: 1396657cb34c9ae4c819de2ec09c2eb3, type: 3}
+  speakerName: L & L
+  sentences:
+  - text: How did you make it here?
+    options: 1
+    option1: Walked
+    option2: Small steps
+  - text: Huh.
+    options: 0
+    option1: 
+    option2: 
