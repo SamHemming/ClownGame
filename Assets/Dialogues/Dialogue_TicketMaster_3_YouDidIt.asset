@@ -15,7 +15,7 @@ MonoBehaviour:
   speakerPrefab: {fileID: 919132149155446097, guid: 25296a152ec6785498f2ca663b7626e2, type: 3}
   speakerName: Ticketmaster
   sentences:
-  - text: Ah! You got ticket!
+  - text: MY DARLING!! You found her!
     options: 0
     option1: 
     option2: 

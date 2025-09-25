@@ -15,23 +15,24 @@ MonoBehaviour:
   speakerPrefab: {fileID: 919132149155446097, guid: 25296a152ec6785498f2ca663b7626e2, type: 3}
   speakerName: Ticketmaster
   sentences:
-  - text: How are you smoll fellas!
+  - text: Little clowns? I can't just let anyone enter the circus
+    options: 1
+    option1: We have a ticket
+    option2: Ticket! Ticket!
+  - text: A ticket....
     options: 0
     option1: 
     option2: 
-  - text: Cant let you in without ticket!
+  - text: Even if you have one, my most darling [Wormy cutter] has scittered away.
     options: 0
     option1: 
     option2: 
-  - text: 3
-    options: 0
-    option1: 
-    option2: 
-  - text: 4
-    options: 0
-    option1: 
-    option2: 
-  - text: 5
-    options: 0
-    option1: 
-    option2: 
+  - text: I can't let you in without validating your ticket.
+    options: 1
+    option1: '[Wormy cutter?]'
+    option2: '[Cutter?]'
+  - text: Yes.. My darling [Wormy cutter]. She has the perfect star shaped mouth
+      to validate tickets...
+    options: 1
+    option1: We'll find!
+    option2: Find!!

@@ -19,7 +19,7 @@ MonoBehaviour:
     options: 0
     option1: 
     option2: 
-  - text: No ticket. No Circus.
+  - text: I can't just let you in.
     options: 1
     option1: Aww...
     option2: Ok...
