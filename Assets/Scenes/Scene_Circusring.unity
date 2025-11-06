@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -330,7 +329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Door_RingToClutter
       objectReference: {fileID: 0}
     - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: destinationName
@@ -395,7 +394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door_RingToEntrance
       objectReference: {fileID: 0}
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_IsActive

@@ -177,7 +177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: DoorLion
+      value: Door_EntranceToLion
       objectReference: {fileID: 0}
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_IsActive
@@ -250,7 +250,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: Door OutsideOutside
+      value: Door_EntranceToOutside
       objectReference: {fileID: 0}
     - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: destinationName
@@ -675,6 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd88fe8c97d5454486fed416776846f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  me: 5
   dialogue1: {fileID: 11400000, guid: 4ccc6845a2fc83647b8a8323aea722e6, type: 2}
   dialogue2: {fileID: 11400000, guid: d02d1941d5086464ba4faf582268844f, type: 2}
   condition: 0
@@ -694,9 +695,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7025285404893622421}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_TargetAssemblyTypeName: Interactable_Door, Assembly-CSharp
+        m_MethodName: Open
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1297,15 +1298,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Door_EntranceToRing
       objectReference: {fileID: 0}
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: isLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: destinationName
@@ -1366,7 +1371,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 7025285404893622420}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e003a0021836e74499d3517c03614675, type: 3}
   m_Name: 

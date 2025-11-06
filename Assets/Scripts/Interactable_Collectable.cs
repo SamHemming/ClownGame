@@ -22,6 +22,15 @@ public class Interactable_Collectable : Interactable
 		//Debug.Log($"Bug????");
 		Inventory.single.Add(item);
 		onCollect?.Invoke();
+		TaskList.single.collectedItems.Add(item);
 		Destroy(this.gameObject);
+	}
+
+	private void Start()
+	{
+		if(TaskList.single.collectedItems.Contains(item))
+		{
+			Destroy(this.gameObject);
+		}
 	}
 }

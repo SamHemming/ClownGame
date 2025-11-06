@@ -142,7 +142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door_ClutterToRing
       objectReference: {fileID: 0}
     - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: destinationName
@@ -617,7 +617,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Door_ClutterToTwins
       objectReference: {fileID: 0}
     - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
       propertyPath: destinationName

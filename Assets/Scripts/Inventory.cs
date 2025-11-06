@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
         if (single == null)
             single = this;
         else Destroy(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void Add(Item item)

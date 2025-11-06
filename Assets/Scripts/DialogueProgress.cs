@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class DialogueProgress : MonoBehaviour
 {
+	public Character me;
 	private int progress = 0;
 	private Interactable_Dialogue interactable;
 
@@ -25,6 +26,15 @@ public class DialogueProgress : MonoBehaviour
 	private void Start()
 	{
 		interactable = GetComponent<Interactable_Dialogue>();
+
+		if (TaskList.single.dialogueProgress.ContainsKey(me))
+		{
+			progress = TaskList.single.dialogueProgress[me];
+		}
+		else
+		{
+			TaskList.single.dialogueProgress.Add(me, progress);
+		}
 	}
 
 	public void CheckProgress()
@@ -67,5 +77,7 @@ public class DialogueProgress : MonoBehaviour
 				Debug.LogWarning($"{this.name}:default case!/nProgressed past last case???");
 				break;
 		}
+
+		TaskList.single.dialogueProgress[me] = progress;
 	}
 }
