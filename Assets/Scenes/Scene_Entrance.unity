@@ -1136,6 +1136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ticketmaster_Placeholder
       objectReference: {fileID: 0}
+    - target: {fileID: 9049194895321348816, guid: 16ccc76019f6b2a46a59ec239d098062, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
