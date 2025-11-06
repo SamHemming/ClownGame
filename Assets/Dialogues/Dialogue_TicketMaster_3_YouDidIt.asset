@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afee2d1f15ec8fe4980ef3d0ea80e9cf, type: 3}
   m_Name: Dialogue_TicketMaster_3_YouDidIt
   m_EditorClassIdentifier: 
-  speakerPrefab: {fileID: 919132149155446097, guid: 25296a152ec6785498f2ca663b7626e2, type: 3}
+  speakerPrefab: {fileID: 2162864587353231628, guid: 58e48b4af12a1df41882f402578e6c29, type: 3}
   speakerName: Ticketmaster
   sentences:
   - text: MY DARLING!! You found her!
