@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     NavMeshAgent nav = null;
 	public static Movement single;
 	public bool canMove = true;
+	public Animator animator;
 
     void Start()
 	{
@@ -21,6 +22,8 @@ public class Movement : MonoBehaviour
 
 	private void Update()
 	{
+		animator.SetBool("IsStopped", !(nav.velocity.magnitude > 0));
+
 		if(canMove && Input.GetMouseButtonDown(0))
 		{
 

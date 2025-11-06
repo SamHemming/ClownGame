@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.91
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -196,10 +196,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4066589366087736460, guid: c7b0db1f1bae5c449b4be066ce64e501, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5053925668127403250, guid: 802948df1294319479c40b74d290ce2f, type: 3}
     - target: {fileID: 5050608839949052171, guid: c7b0db1f1bae5c449b4be066ce64e501, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -619,10 +615,6 @@ PrefabInstance:
       propertyPath: playerOne
       value: 
       objectReference: {fileID: 539890346}
-    - target: {fileID: 7269560902071122171, guid: f160c2b1dc4b4a1419707e628b4bf361, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -1550514412580984892, guid: 4bb245bd29453984eb764498367e3636, type: 3}
     - target: {fileID: 9015069697548862556, guid: f160c2b1dc4b4a1419707e628b4bf361, type: 3}
       propertyPath: m_Name
       value: Player2

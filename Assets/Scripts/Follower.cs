@@ -10,6 +10,8 @@ public class Follower : MonoBehaviour
 	[SerializeField]
 	GameObject playerOne = null;
 
+	public Animator animator;
+
 	void Start()
 	{
 		nav = GetComponent<NavMeshAgent>();
@@ -19,6 +21,11 @@ public class Follower : MonoBehaviour
 	{
 		if (nav != null && playerOne != null)
 			nav.destination = playerOne.transform.position;
+	}
+
+	private void Update()
+	{
+		animator.SetBool("IsStopped", !(nav.velocity.magnitude > 0));
 	}
 
 }
