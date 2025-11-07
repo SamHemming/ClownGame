@@ -303,17 +303,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9610da903bc68ec4d867114dce6c42d9, type: 3}
---- !u!114 &635287832 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2911579213587382108, guid: 9610da903bc68ec4d867114dce6c42d9, type: 3}
-  m_PrefabInstance: {fileID: 635287831}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4691fe086bb1e74ca98b6b90a21f23d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &684431761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -653,30 +642,6 @@ MonoBehaviour:
   onDialogue3:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 635287832}
-        m_TargetAssemblyTypeName: TaskList, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Door_ClutterToTwins
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 635287832}
-        m_TargetAssemblyTypeName: TaskList, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Door_ClutterToStrong
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 839803430}
         m_TargetAssemblyTypeName: Interactable_Dialogue, Assembly-CSharp
         m_MethodName: OpenDoor
@@ -1001,7 +966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d626efbd1446de641af8b42b6f3f4fc4, type: 3}
       propertyPath: m_Name
-      value: Ringleader
+      value: RingLeader
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

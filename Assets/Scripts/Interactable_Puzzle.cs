@@ -31,7 +31,10 @@ public class Interactable_Puzzle : Interactable
 		if(done)
 		{
 			OnPuzzleDone?.Invoke();
-			TaskList.single.BoolTasks["Ringleader"] = true;
+			if (TaskList.single.BoolTasks.ContainsKey("RingLeader"))
+				TaskList.single.BoolTasks["RingLeader"] = true;
+			else
+				TaskList.single.BoolTasks.Add("RingLeader", true);
 			Movement.single.canMove = true;
 			TaskList.single.lightsOn = true;
 		}

@@ -54,13 +54,14 @@ public class DialogueProgress : MonoBehaviour
 				break;
 			case 1:
 				//if reguest is filled progress to next and play next, else play this.
-				if (wantedItem.name != null)
+				if (wantedItem.name != "")
 				{
 					condition = Inventory.single.items.Contains(wantedItem);
 				}
 				else
 				{
 					condition = TaskList.single.BoolTasks[this.name];
+					Debug.Log(condition);
 				}
 
 				if (condition)
