@@ -13,7 +13,7 @@ public class DialogueProgress : MonoBehaviour
 	public Dialogue dialogue2;
 
 	public bool condition = false;
-	public Item wantedItem = new();
+	public Item wantedItem;
 
 	public Dialogue dialogue3;
 	public Dialogue dialogue4;
@@ -54,7 +54,7 @@ public class DialogueProgress : MonoBehaviour
 				break;
 			case 1:
 				//if reguest is filled progress to next and play next, else play this.
-				if (wantedItem.name != "")
+				if (wantedItem.name != null)
 				{
 					condition = Inventory.single.items.Contains(wantedItem);
 				}
