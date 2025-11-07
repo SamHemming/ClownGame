@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae4919c42a0fa84cbfddf1e852d18ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 1
+  interactionDistance: 4.46
   dialogueUI: {fileID: 909574513}
   speakerPosition: {fileID: 909574518}
   dialogueObj: {fileID: 909574516}
