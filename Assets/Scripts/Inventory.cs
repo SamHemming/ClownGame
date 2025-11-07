@@ -26,4 +26,16 @@ public class Inventory : MonoBehaviour
         items.Remove(item);
     }
 
+    public void Combine()
+    {
+        if(items.Contains(new Item("liima")) && items.Contains(new Item("purkka")) && items.Contains(new Item("purkki")) && items.Contains(new Item("hattara")))
+        {
+            items.Add(new Item("vaha"));
+            items.Remove(new Item("liima"));
+            items.Remove(new Item("purkka"));
+            items.Remove(new Item("purkki"));
+            items.Remove(new Item("hattara"));
+        }
+    }
+
 }

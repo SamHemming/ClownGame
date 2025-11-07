@@ -10,14 +10,14 @@ public class Interactable_Door : Interactable
 
 	private void Start()
 	{
-		if (TaskList.single.lockedDoor.ContainsKey(this.name))
+		if (TaskList.single.BoolTasks.ContainsKey(this.name))
 		{
-			isLocked = TaskList.single.lockedDoor[this.name];
+			isLocked = TaskList.single.BoolTasks[this.name];
 			Debug.Log("door found in dictionary");
 		}
 		else
 		{
-			TaskList.single.lockedDoor.Add(this.name, isLocked);
+			TaskList.single.BoolTasks.Add(this.name, isLocked);
 			Debug.Log("door Not found in dictionary");
 		}
 	}
@@ -25,7 +25,7 @@ public class Interactable_Door : Interactable
 	public void Open()
 	{
 		isLocked = false;
-		TaskList.single.lockedDoor[this.name] = false;
+		TaskList.single.BoolTasks[this.name] = false;
 	}
 
 	protected override void Interact()
