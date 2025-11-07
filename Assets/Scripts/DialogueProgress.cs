@@ -46,12 +46,21 @@ public class DialogueProgress : MonoBehaviour
 				interactable.dialogue = dialogue1;
 				progress++;
 				onDialogue1?.Invoke();
+				if (!TaskList.single.BoolTasks.ContainsKey(this.name))
+				{
+					TaskList.single.BoolTasks.Add(this.name, condition);
+					Debug.Log(this.name);
+				}
 				break;
 			case 1:
 				//if reguest is filled progress to next and play next, else play this.
-				if(wantedItem.name != "")
+				if (wantedItem.name != "")
 				{
 					condition = Inventory.single.items.Contains(wantedItem);
+				}
+				else
+				{
+					condition = TaskList.single.BoolTasks[this.name];
 				}
 
 				if (condition)

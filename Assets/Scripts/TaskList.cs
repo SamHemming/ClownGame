@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public enum Character {diva, strongman, ringleader, lion, twins, ticketmaster}
 
@@ -21,7 +25,27 @@ public class TaskList : MonoBehaviour
 
 	public List<Item> collectedItems = new();
 
-	public Dictionary<string, bool> lockedDoor = new();
+	public Dictionary<string, bool> BoolTasks = new();
 
-	public bool fuseFixed = false;
+	public bool TentOpen {  get; set; }
+	public bool lightsOn = false;
+	public bool tentOpen = false;
+	public Sprite tentOpenTexture;
+	public Sprite ringLight;
+	public Sprite clutterLight;
+
+	private void OnLevelWasLoaded(int level)
+	{
+		Sprite img = null;
+		if (level == 1 && tentOpen) //entrance
+			img = tentOpenTexture;
+		if (level == 2 && lightsOn) //ring
+			img = ringLight;
+		if (level == 3 && lightsOn) //clutter
+			img = clutterLight;
+
+		if(img != null)
+			FindFirstObjectByType<Canvas>().GetComponentInChildren<Image>().sprite = img;
+		
+	}
 }

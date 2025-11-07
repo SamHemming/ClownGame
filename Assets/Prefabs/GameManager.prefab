@@ -45,7 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4691fe086bb1e74ca98b6b90a21f23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuseFixed: 0
+  collectedItems: []
+  lightsOn: 0
+  tentOpen: 0
+  tentOpenTexture: {fileID: 0}
+  ringLight: {fileID: 0}
+  clutterLight: {fileID: 2800000, guid: 8d63b5724caa7ec4aa255009685a7ff0, type: 3}
 --- !u!114 &6143349275626838806
 MonoBehaviour:
   m_ObjectHideFlags: 0

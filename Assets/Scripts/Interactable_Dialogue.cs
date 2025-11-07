@@ -128,4 +128,16 @@ public class Interactable_Dialogue : Interactable
 			yield return new WaitForEndOfFrame();
 		}
 	}
+
+	public void OpenDoor(string temp)
+	{
+		if (TaskList.single.BoolTasks.ContainsKey(temp))
+		{
+			TaskList.single.BoolTasks[temp] = false;
+		}
+		else
+		{
+			TaskList.single.BoolTasks.Add(temp, false);
+		}
+	}
 }
