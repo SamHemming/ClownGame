@@ -186,7 +186,7 @@ MonoBehaviour:
   dialogue2: {fileID: 11400000, guid: 7b76a34c505036b4e8c1c44a27a24b87, type: 2}
   condition: 0
   wantedItem:
-    name: 
+    name: vaha
     description: 
     sprite: {fileID: 0}
   dialogue3: {fileID: 11400000, guid: d2314ca5589551841bc554a8a370dce4, type: 2}
@@ -211,7 +211,19 @@ MonoBehaviour:
       m_Calls: []
   onDialogue3:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 81196223}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: happy
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialogue4:
     m_PersistentCalls:
       m_Calls: []
@@ -266,7 +278,79 @@ MonoBehaviour:
   image1: {fileID: 2074324057}
   image2: {fileID: 1971252862}
   button: {fileID: 613510154}
-  trigger: 0
+--- !u!1001 &156152581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2530701424869084260, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_Name
+      value: Door_StrongToClutter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246816631572359012, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: destinationName
+      value: Scene_Clutterroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608081496827269831, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539427381689089685, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a48b8d1d844b5ff4789dab61cbb0070d, type: 3}
 --- !u!1 &613510152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,3 +1452,4 @@ SceneRoots:
   - {fileID: 1645449830}
   - {fileID: 1121696279}
   - {fileID: 1292631561}
+  - {fileID: 156152581}

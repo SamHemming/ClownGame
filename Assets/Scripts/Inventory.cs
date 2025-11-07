@@ -127,7 +127,7 @@ public class Inventory : MonoBehaviour
 
     public void Combine()
     {
-        if(items.Contains(new Item("liima")) && items.Contains(new Item("purkka")) && items.Contains(new Item("purkki")) && items.Contains(new Item("hattara")))
+        if(liima && purkka && purkki && hattara)
         {
             items.Add(new Item("vaha"));
             vaha = true;
